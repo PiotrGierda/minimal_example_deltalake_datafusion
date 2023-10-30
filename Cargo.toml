@@ -1,0 +1,12 @@
+[package]
+name = "minimal_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+datafusion = { version = "31" }
+deltalake = { version = "0.16.2", features = ["datafusion", "s3"] }
+tokio = { version = "1.25.0", features = ["rt-multi-thread", "rt", "macros"] }
+uuid = { version = "1.2.2", features = ["v4"] }
